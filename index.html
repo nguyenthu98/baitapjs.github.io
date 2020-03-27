@@ -19,6 +19,7 @@
     </style>
 </head>
 <body>
+   
     <div class="wrapper">
         <form action="">
             Lớp: <select id="listClassName" onclick="Show(this);">
@@ -27,6 +28,7 @@
                 <option value="angular">Angular</option>
                 <option value="java">Java</option>
                 <option value="test">Test</option>
+
             </select>
             <br><br><br>
             Danh sách học sinh:
@@ -60,9 +62,10 @@
                     y.remove(0);
                 }
             }
-            for( var j = 0;j < listStudent.length; j++){
-                document.getElementById("listName").innerHTML +="<option>" + listStudent[j] + "<option>";
+            for( var i = 0;i < listStudent.length; i++){
+                document.getElementById("listName").innerHTML +="<option>" + listStudent[i] + "</option>";
             }
+
             
         }
     </script>
